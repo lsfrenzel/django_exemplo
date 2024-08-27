@@ -1,0 +1,23 @@
+Instalação
+
+python -m venv venv
+
+venv\Scripts\Activate
+
+Com seu ambiente virtual configurado, instale as dependências do projeto com:
+
+pip install -r requirements.txt
+
+Para criar as Migrations:
+
+python manage.py makemigrations
+
+Para efetivar as Migrations no banco de dados:
+
+python manage.py migrate
+
+Execução
+
+Para executar o servidor de testes do Django, execute:
+
+python manage.py runserver
