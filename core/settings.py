@@ -4,14 +4,13 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECRET_KEY do Django (utilize alguma ferramenta para desacoplar seu código)
-# SECRET_KEY = 'django-insecure-)@fe43j)6x0($8_b3-=e-gnyo#fl144eb@kgzf6k2_n^*cz)_v'
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
+SECRET_KEY = 'django-insecure-)@fe43j)6x0($8_b3-=e-gnyo#fl144eb@kgzf6k2_n^*cz)_v'
 
 # Modo Debug
-# DEBUG = True
-DEBUG = int(os.environ.get('DJANGO_DEBUG', default=0))
+DEBUG = True
 
-ALLOWED_HOSTS = str(os.environ.get('DJANGO_ALLOWED_HOSTS')).split(',')
+
+ALLOWED_HOSTS = []
 
 # Apps instalados
 INSTALLED_APPS = [
